@@ -2,24 +2,24 @@ import mongoose from "mongoose";
 
 const categoriasSchema = mongoose.Schema(
     {
-    imagen: {
+    categoria: {
         type: String,
         required:true,
         trim:true 
     },
-    nombre:{
+    producto:{
         type:String,
         required:true,
         trim:true
     },
-    descripcion:{
+    talla:{
         type:String,
         required:true,
-        trim:true
+        trim:true,
     }
     }, 
     {
-        timesTamps:true,
+        timestamps:true,
     }
 );
 
